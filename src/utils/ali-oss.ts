@@ -1,13 +1,14 @@
+
 import OSS from 'ali-oss';
 
 
+
 export function client() {
-    console.log(process.env, 'process.env');
     return new OSS({
-        region: process.env.region,
-        accessKeyId: process.env.accessKeyId,
-        accessKeySecret: process.env.accessKeySecret,
-        bucket: process.env.bucket,
+      region: process.env.VUE_APP_region,
+      accessKeyId: process.env.VUE_APP_accessKeyId,
+      accessKeySecret: process.env.VUE_APP_accessKeySecret,
+      bucket: process.env.VUE_APP_bucket,
     });
 }
 

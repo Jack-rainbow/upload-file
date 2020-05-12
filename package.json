@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "dev": "cross-env NODE_ENV=development  vue-cli-service serve",
+    "build": "cross-env  NODE_ENV=production  vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "ali-oss": "^6.7.0",
     "core-js": "^3.6.4",
+    "cross-env": "^7.0.2",
     "element-ui": "^2.13.1",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",

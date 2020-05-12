@@ -26,6 +26,6 @@
     "no-console": false,
     "no-empty": false,
     "noImplicitAny": false,
-    "quotemark": [true, "single"]
+    "quotemark": false
   }
 }
